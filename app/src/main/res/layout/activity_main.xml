@@ -6,13 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/circle"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="246dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="272dp"
+        android:gravity="center"
+        android:text="GROW YOUR BUSSINESS"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:text="GROW YOUR BUSSINESS" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="We will help you to grow your bussiness using online server"
+        android:textSize="15"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.596"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="199dp"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="HOW WE WORK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:text="LOGIC"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:rippleColor="#D14747"
+        tools:layout_editor_absoluteY="549dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="275dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
