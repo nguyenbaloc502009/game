@@ -7,6 +7,7 @@
     tools:context=".MainActivity2">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="193dp"
         android:layout_height="193dp"
         tools:layout_editor_absoluteX="109dp"
@@ -36,38 +37,53 @@
         android:id="@+id/imageView4"
         android:layout_width="410dp"
         android:layout_height="733dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/background__2_"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-1dp" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="170dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="52dp"
         android:gravity="center"
         android:text="FORGET PASSWORD"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="305dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="132dp"
         android:gravity="center"
         android:text="Provide your account ,s  email for which you want to reset your password"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="336dp"
         android:layout_height="40dp"
-        android:background="#ECC107"
+        android:backgroundTint="#BFA324"
+        android:backgroundTintMode="add"
         android:text="NEXT"
         app:iconTint="#F6CA05"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="612dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
